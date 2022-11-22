@@ -5,8 +5,323 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Work+Sans:wght@900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Dosis&family=Roboto:wght@300;400;700&family=Work+Sans:wght@900&display=swap');
+
+        body,
+        html {
+            background-color: #EDEDED;
+
+            font-family: 'Dosis';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 23px;
+
+            color: #2B2B2B;
+
+        }
+
+        header {
+            margin-top: 30px;
+            margin-right: 20%;
+            padding: 5%;
+
+        }
+
+        .cabecalho div {
+            display: inline-block;
+            text-align: right;
+        }
+
+        .cabecalho {
+            text-align: right;
+            word-spacing: 10px;
+
+        }
+
+        .idioma {
+            text-decoration-line: underline;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 85%;
+            line-height: 21px;
+            text-decoration-line: underline;
+
+            color: #2B2B2B;
+
+
+        }
+
+        .idomas {
+            text-decoration-line: underline;
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration-line: underline;
+
+            color: #2B2B2B;
+
+        }
+
+        .pt {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+
+
+            color: #2B2B2B;
+
+        }
+
+        .es {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+
+            color: #2B2B2B;
+
+        }
+
+        .flutuante {
+            position: absolute;
+            width: 570px;
+            height: 984px;
+            left: 737px;
+            top: 121px;
+        }
+
+        .texto1 {
+            width: 570px;
+            margin-top: 25px;
+        }
+
+        h3 {
+            font-family: 'Dosis';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 28px;
+            text-transform: uppercase;
+
+            color: #5287DD;
+
+        }
+
+        .cronograma {
+            margin-top: 25px;
+        }
+
+        .texto2 {
+            margin-top: 8px;
+        }
+
+        .banner1 {
+            margin-top: 61px;
+            background-color: #5287DD;
+
+        }
+
+        .iniciativa h1 {
+            color: white;
+            padding-top: 95px;
+
+        }
+
+        h1 {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 68px;
+            line-height: 62px;
+        }
+
+        .conteudo {
+            color: white;
+            margin-top: 32px;
+            padding-bottom: 86px;
+            width: 470px;
+        }
+
+        .main {
+            margin: 5%;
+        }
+
+        .banner-conteudo {
+            margin: 5%;
+        }
+
+        .intercambio {
+            margin: 5%;
+
+        }
+
+        .texto4 {
+            margin-top: 81px;
+
+        }
+
+        .texto5 {
+            margin-top: 32px;
+
+
+        }
+
+        .button1 {
+            width: 487px;
+            border-radius: 8px;
+            height: 62px;
+            gap: 10px;
+            padding: 0px 32px 0px 32px;
+            margin-top: 32px;
+
+
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 26px;
+            color: #EDEDED;
+            background: #5287DD;
+            border: none;
+
+        }
+
+        .button1:hover {
+            background: #2B2B2B;
+            transition: 0.4s;
+            border: 3px solid #2B2B2B;
+
+            transition: 1s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .acesse,
+        .a:hover,
+        a:visited {
+
+            margin-top: 18px;
+            margin: 5%;
+
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 900;
+            font-size: 18px;
+            line-height: 21px;
+            text-decoration-line: underline;
+            color: #2B2B2B;
+
+            transition: 0.4s;
+        }
+
+        a:hover {
+            color: #5287DD;
+
+        }
+
+        .lupa {
+            float: right;
+
+        }
+
+        .banner2 {
+            margin-top: 61px;
+            background-color: #5287DD;
+
+        }
+
+        .banner-conteudo2 {
+            text-align: -webkit-center;
+        }
+
+        .inscreva h1 {
+            color: white;
+            padding-top: 80px;
+            text-align: center;
+
+        }
+
+        .button2 {
+            margin-top: 32px;
+            margin: 5%;
+            width: 25%;
+            height: 62px;
+
+
+            align-items: center;
+
+            color: #FFFFFF;
+            background: #5287DD;
+
+
+            border: 3px solid #FFFFFF;
+            border-radius: 8px;
+
+            cursor: pointer;
+
+
+        }
+
+        .button2:hover {
+            background: #2B2B2B;
+            transition: 0.4s;
+
+
+        }
+
+        .quero-inscrever {
+            font-family: 'Work Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 62px;
+
+        }
+
+        footer {
+            margin-top: 73px;
+            margin-left: 139px;
+            padding-bottom: 61px;
+        }
+
+        footer div {
+            display: inline-block;
+            vertical-align: middle;
+
+        }
+
+        footer div img {
+
+            margin-left: 15px;
+
+        }
+
+        .realizao.img {
+            float: left;
+
+        }
+
+        .apoio-img {
+            float: right;
+            margin-right: 100px;
+
+        }
+    </style>
     <title>Fractal Academy</title>
 </head>
 
